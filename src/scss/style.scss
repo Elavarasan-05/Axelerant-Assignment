@@ -1,0 +1,16 @@
+@import './partials/variables';
+@import './partials/_header';
+@import './partials/banner';
+@import './partials/_about';
+@import './partials/_testimonials';
+@import './partials/_contact';
+@import './partials/_footer';
+@import './partials/_responsive';
+
+html,body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}

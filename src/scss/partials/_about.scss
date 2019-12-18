@@ -1,0 +1,21 @@
+.about-container {
+  display: flex;
+  padding: 45px 45px;
+  margin: 40px 0px;
+  .about-container--left {
+    width: 50%;
+    h2{
+      color: $brand-header-color;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    p{
+      color: $brand-text-color;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+  .about-container--right{
+    width: 50%;
+  }
+}

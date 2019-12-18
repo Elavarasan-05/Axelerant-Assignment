@@ -1,0 +1,58 @@
+.header-conatiner {
+  display: flex;
+  background-color: #161412;
+  padding: 20px 30px;
+  width: calc(100% - 60px);
+  position: relative;
+  .logo-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    p{
+      margin: 0;
+      color:#fff;
+      text-transform: uppercase;
+      span{
+        color: $brand-primary-color;
+      }
+    }
+    label{
+      display: none;
+    }
+  }
+  .menu-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li{
+        margin: 0 15px;
+        padding: 0 10px;
+        display: inline-block;
+        color: #c2c2c2;
+        cursor: pointer;
+        position: relative;
+        &.active{
+          color: #fff;
+        }
+        button{
+          background-color: $brand-primary-color;
+          color: #fff;
+          border: 0;
+          padding: 10px 40px;
+          border-radius: 25px;
+          font-weight: 600;
+        }        
+      }
+    }    
+  }  
+  .touch-icon{
+    position: absolute;
+    right: 14.5%;
+    top: 41%;
+  }
+}

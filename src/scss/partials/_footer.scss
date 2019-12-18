@@ -1,0 +1,26 @@
+.footer-container{
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  padding:15px;
+  .footer--left {
+    width: 50%;
+    color:#f4f4f4;
+  }
+  .footer--right{
+    width :50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+    .footer--right__text{
+      margin: 0 20px 0 0;
+      p{
+        color: #f4f4f4;
+      }
+    }
+    .footer--right__image{
+      margin: 0 10px 0 0;
+    }
+  }
+}

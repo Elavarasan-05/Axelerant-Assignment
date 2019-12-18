@@ -1,0 +1,155 @@
+@media screen and (max-width: 600px){
+  .header-conatiner {
+    padding: 15px;
+    width: calc(100% - 30px);
+    .mobile-menu{
+      position: absolute;
+      left: 15px;
+      cursor: pointer;
+      &.active{
+        label:first-child{
+          display: inline-block;
+          transform: rotate(45deg);
+          transition: all 0.5s;
+        }
+        label:nth-child(2){
+          display: inline-block;
+          transform: rotate(-45deg);
+          position: relative;
+          left: -24px;
+          top: 0px;
+          transition: all 0.5s;
+        }
+        label:last-child{
+          display: none;
+          transition: all 0.5s;
+        }
+      }
+      label{
+        display: block;
+        width : 20px;
+        margin: 2px 0;
+        border: 2px solid #fff;
+        transition: all 0.5s;       
+      }
+    }
+    .logo-container {
+      width : 100%;
+      justify-content: center;  
+    }
+    .menu-container{
+      position: absolute;
+      width: 100%;
+      height: 0;
+      left: 0;
+      top: 45px;     
+      visibility: hidden;
+      transition: all 0.5s;      
+      &.active{
+        height: auto;      
+        visibility: visible;  
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        background-color: #161412;
+        transition: all 0.5s;
+        ul{
+          li{
+            display: block;
+            min-height: 30px;
+            text-align: center;
+            font-size: 16px;
+            margin: 15px 0;            
+          }
+          
+        }
+        }
+      }
+      
+      .touch-icon{
+        position: absolute;
+        right: 20px;
+      }
+    } 
+  .banner-container{
+    height:calc(100vh - 48px);
+    .banner-content{
+      align-items: flex-start;
+      .banner-heading{
+        width: calc(100% - 30px);
+        padding: 15px;
+      }
+      .banner-services{
+        display: block;
+        width:100%;
+        .service-content{
+          flex-direction: row;
+          padding:15px;
+          margin: 15px;
+          justify-content: start;
+          .service-content--icon{
+            width: 50px;
+            margin: 0 20px 0 0;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    } 
+  }
+  .about-container{
+    padding:15px;
+    display: block;
+    .about-container--left{
+      width: 100%;
+    }
+    .about-container--right{
+      width : 100%;
+      .about-image-container{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .testimonials-container{
+    .testimonial-content{
+      display: block;
+      .testimonial-content--container{
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .contact-container{
+    .conatct-form-container{
+      .contact-form{
+        display: block;
+        margin:0;
+        .input-filed{
+          width: 100%;
+          margin: 10px 0;
+        }        
+      }
+      .message-desc{
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-container{
+    display: block;
+    .footer--left{
+      width: 100%;
+      text-align: center;
+    }
+    .footer--right{
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
